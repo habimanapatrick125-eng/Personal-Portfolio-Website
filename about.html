@@ -4,226 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Patrick Habimana</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Patrick<span class="text-accent">.</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNav" aria-controls="mainNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<main>
-    <header class="page-hero">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm site-nav">
         <div class="container">
-            <p class="eyebrow">GET TO KNOW ME</p>
-            <h1 class="page-title">About <span class="text-accent">Me</span></h1>
-            <p class="lead-copy">
-                My background, education, skills, interests, and future goals.
-            </p>
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                <span class="brand-badge">P</span> Patrick<span class="text-accent">.</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header py-5 bg-dark text-white text-center">
+        <div class="container py-4">
+            <h1 class="fw-bold display-5">About <span class="text-accent">Me</span></h1>
+            <p class="text-light opacity-75 mb-0">My background story, academic path, and professional skill sets.</p>
         </div>
     </header>
 
-    <!-- Biography -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="row align-items-center g-5">
+    <!-- Biography Section -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center gy-5">
                 <div class="col-lg-5">
-                    <img
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85"
-                        alt="Profile photo placeholder"
-                        class="about-photo">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Biography Image" class="img-fluid rounded-4 shadow">
                 </div>
-
                 <div class="col-lg-7">
-                    <p class="eyebrow">MY STORY</p>
-                    <h2 class="section-title">
-                        A student passionate about technology
-                    </h2>
-
-                    <p class="muted-copy">
-                        My name is Patrick Habimana. I am developing my
-                        knowledge of computing and software development.
-                        I enjoy learning how websites, applications, and
-                        information systems work.
+                    <span class="text-uppercase text-primary fw-bold tracking-wide small">BIOGRAPHY & BACKGROUND</span>
+                    <h2 class="fw-bold mb-3">Dedicated to Crafting Clean and Scalable Code</h2>
+                    <p class="text-muted">
+                        Hello! My name is <strong>Patrick Habimana</strong>. I am an enthusiastic software engineering student driven by a deep curiosity about how systems, networks, and web technologies work together. 
                     </p>
-
-                    <p class="muted-copy">
-                        My academic interests include web development,
-                        programming, databases, and software engineering.
-                        I learn by completing exercises, building projects,
-                        correcting errors, and practising new techniques.
-                    </p>
-
-                    <p class="muted-copy">
-                        My long-term goal is to become a skilled software
-                        developer who creates useful digital solutions
-                        and contributes positively to the technology industry.
+                    <p class="text-muted">
+                        My daily routine involves hands-on coding, managing relational databases, resolving syntax or logic challenges, and building organized project repositories via Git and GitHub. I believe in continuous self-improvement and learning by execution.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education -->
-    <section class="section-padding section-soft">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">MY ACADEMIC JOURNEY</p>
-                <h2>Education & Coursework</h2>
-                <p>Replace the placeholders below with your actual information.</p>
+    <!-- Education Section -->
+    <section class="py-5 bg-light-subtle">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-uppercase text-primary fw-bold tracking-wide small">ACADEMIC PATH</span>
+                <h2 class="fw-bold mt-1">Education & Coursework</h2>
             </div>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <div class="timeline-card">
-                        <span class="timeline-label">CURRENT STUDIES</span>
-                        <h3>[Your University Name]</h3>
-                        <p>[Your Degree or Programme]</p>
-                        <small>[Start Year] – Present</small>
-                        <p class="mt-3 mb-0">
-                            Relevant coursework: Software Engineering,
-                            Web Design, Programming, Database Systems,
-                            and Discrete Mathematics.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <span class="timeline-dot"></span>
-                    <div class="timeline-card">
-                        <span class="timeline-label">PREVIOUS EDUCATION</span>
-                        <h3>[Your Previous School]</h3>
-                        <p>[Your Qualification]</p>
-                        <small>[Years Attended]</small>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4 mb-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="bg-primary text-white p-3 rounded-3"><i class="bi bi-mortarboard-fill fs-4"></i></div>
+                            <div>
+                                <span class="badge bg-primary-subtle text-primary mb-1">Current Studies</span>
+                                <h3 class="h5 fw-bold mb-1">Bugema University</h3>
+                                <p class="text-muted mb-2 small">Bachelor of Software Engineering (Student ID: 25/BSE/BU/R/0025)</p>
+                                <p class="text-secondary small mb-0">Relevant Coursework: Object-Oriented Programming, Database Management (MySQL), Data Structures, and Web UI Design.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
-    <section class="section-padding" id="skills">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">MY COMPETENCIES</p>
-                <h2>Skills & Abilities</h2>
-                <p>My current learning areas and personal strengths.</p>
+    <!-- Skills & Competencies -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-uppercase text-primary fw-bold tracking-wide small">EXPERTISE</span>
+                <h2 class="fw-bold mt-1">Skills & Competencies</h2>
             </div>
-
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="skill-panel">
-                        <h3><i class="bi bi-code-slash"></i> Technical Skills</h3>
-
-                        <div class="skill-line">
-                            <div><span>HTML5</span><span>Learning</span></div>
-                            <div class="skill-track"><span style="width: 65%"></span></div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <h3 class="h5 fw-bold mb-4 text-primary"><i class="bi bi-code-square me-2"></i>Technical Skills</h3>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small fw-bold mb-1"><span>HTML5 & CSS3</span><span>85%</span></div>
+                            <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 85%;"></div></div>
                         </div>
-
-                        <div class="skill-line">
-                            <div><span>CSS3</span><span>Learning</span></div>
-                            <div class="skill-track"><span style="width: 60%"></span></div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small fw-bold mb-1"><span>Bootstrap 5 Responsive Layouts</span><span>80%</span></div>
+                            <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 80%;"></div></div>
                         </div>
-
-                        <div class="skill-line">
-                            <div><span>Bootstrap 5</span><span>Learning</span></div>
-                            <div class="skill-track"><span style="width: 50%"></span></div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small fw-bold mb-1"><span>Python & Object-Oriented Programming</span><span>70%</span></div>
+                            <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 70%;"></div></div>
                         </div>
-
-                        <div class="skill-line">
-                            <div><span>C Programming</span><span>Learning</span></div>
-                            <div class="skill-track"><span style="width: 45%"></span></div>
-                        </div>
-
-                        <div class="skill-line">
-                            <div><span>Python</span><span>Learning</span></div>
-                            <div class="skill-track"><span style="width: 40%"></span></div>
-                        </div>
-
-                        <div class="skill-line">
-                            <div><span>SQL & Databases</span><span>Learning</span></div>
-                            <div class="skill-track"><span style="width: 40%"></span></div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small fw-bold mb-1"><span>MySQL & Database Workbenches</span><span>75%</span></div>
+                            <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 75%;"></div></div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="skill-panel h-100">
-                        <h3><i class="bi bi-people"></i> Soft Skills</h3>
-
-                        <div class="competency-grid">
-                            <div><i class="bi bi-check-circle"></i> Problem solving</div>
-                            <div><i class="bi bi-check-circle"></i> Teamwork</div>
-                            <div><i class="bi bi-check-circle"></i> Communication</div>
-                            <div><i class="bi bi-check-circle"></i> Time management</div>
-                            <div><i class="bi bi-check-circle"></i> Adaptability</div>
-                            <div><i class="bi bi-check-circle"></i> Independent learning</div>
-                        </div>
-
-                        <h3 class="mt-5"><i class="bi bi-heart"></i> Interests & Hobbies</h3>
-                        <p class="muted-copy">
-                            Web development, programming, exploring technology,
-                            solving computer problems, learning new skills,
-                            and working on practical projects.
-                        </p>
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <h3 class="h5 fw-bold mb-4 text-primary"><i class="bi bi-person-lines-fill me-2"></i>Soft Skills & Interests</h3>
+                        <ul class="list-unstyled d-flex flex-column gap-3 text-secondary">
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Strong problem-solving & logical analysis</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Effective team collaboration via GitHub</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Consistent self-directed learning</li>
+                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Time management & multi-tasking under deadlines</li>
+                        </ul>
+                        <hr class="my-3">
+                        <h4 class="h6 fw-bold">Personal Passions</h4>
+                        <p class="text-muted small mb-0">Exploring innovative desktop applications, reading technology trends, and structuring functional database models.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-band">
-        <div class="container d-md-flex justify-content-between align-items-center">
-            <div>
-                <h2>Let's connect and share ideas.</h2>
-                <p class="mb-0">I'm always ready to learn and collaborate.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center text-md-start d-md-flex justify-content-between align-items-center">
+            <p class="mb-2 mb-md-0 small text-light opacity-75">&copy; <span id="currentYear"></span> Patrick Habimana. All rights reserved.</p>
+            <div class="social-icons d-flex justify-content-center gap-3">
+                <a href="https://github.com/habimanapatrick125-eng" target="_blank" class="text-light fs-5"><i class="bi bi-github"></i></a>
+                <a href="mailto:your.email@bugemauniv.ac.ug" class="text-light fs-5"><i class="bi bi-envelope-fill"></i></a>
             </div>
-            <a href="contact.html" class="btn btn-light mt-3 mt-md-0">
-                Contact Me <i class="bi bi-arrow-right"></i>
-            </a>
         </div>
-    </section>
-</main>
+    </footer>
 
-<footer class="site-footer">
-    <div class="container footer-inner">
-        <a class="navbar-brand fw-bold" href="index.html">Patrick<span class="text-accent">.</span></a>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <small>© <span data-year></span> Patrick Habimana. All rights reserved.</small>
-    </div>
-</footer>
-
-<script>
-    document.querySelectorAll("[data-year]").forEach(el => {
-        el.textContent = new Date().getFullYear();
-    });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
