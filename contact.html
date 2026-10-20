@@ -4,235 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Patrick Habimana</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Patrick<span class="text-accent">.</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNav" aria-controls="mainNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<main>
-    <header class="page-hero">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm site-nav">
         <div class="container">
-            <p class="eyebrow">LET'S CONNECT</p>
-            <h1 class="page-title">Get in <span class="text-accent">Touch</span></h1>
-            <p class="lead-copy">
-                Have a question or project idea? I would be happy to hear from you.
-            </p>
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                <span class="brand-badge">P</span> Patrick<span class="text-accent">.</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header py-5 bg-dark text-white text-center">
+        <div class="container py-4">
+            <h1 class="fw-bold display-5">Get in <span class="text-accent">Touch</span></h1>
+            <p class="text-light opacity-75 mb-0">Have an inquiry or collaboration idea? Send me a message below.</p>
         </div>
     </header>
 
-    <section class="section-padding">
-        <div class="container">
+    <!-- Contact Content -->
+    <section class="py-5">
+        <div class="container py-4">
             <div class="row g-5">
-
-                <!-- Contact information -->
+                <!-- Contact Details -->
                 <div class="col-lg-5">
-                    <p class="eyebrow">CONTACT INFORMATION</p>
-                    <h2 class="section-title">Let's start a conversation.</h2>
-                    <p class="muted-copy">
-                        You can contact me about my projects, learning journey,
-                        or opportunities to collaborate.
-                    </p>
-
-                    <div class="contact-detail">
-                        <span class="contact-icon"><i class="bi bi-envelope"></i></span>
+                    <span class="text-uppercase text-primary fw-bold tracking-wide small">REACH OUT</span>
+                    <h2 class="fw-bold mb-3">Let's Start a Conversation</h2>
+                    <p class="text-muted mb-4">You can reach me through my university contact details or professional channels listed below.</p>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary-subtle text-primary p-3 rounded-3 me-3 fs-5"><i class="bi bi-envelope-fill"></i></div>
                         <div>
-                            <small>Email Address</small>
-                            <a href="mailto:your.email@example.com">
-                                your.email@example.com
-                            </a>
+                            <h3 class="h6 fw-bold mb-1">Email Address</h3>
+                            <a href="mailto:your.email@bugemauniv.ac.ug" class="text-decoration-none text-muted small">your.email@bugemauniv.ac.ug</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary-subtle text-primary p-3 rounded-3 me-3 fs-5"><i class="bi bi-telephone-fill"></i></div>
+                        <div>
+                            <h3 class="h6 fw-bold mb-1">Phone Number</h3>
+                            <p class="text-muted small mb-0">+256 700 000 000</p>
                         </div>
                     </div>
 
-                    <div class="contact-detail">
-                        <span class="contact-icon"><i class="bi bi-telephone"></i></span>
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary-subtle text-primary p-3 rounded-3 me-3 fs-5"><i class="bi bi-geo-alt-fill"></i></div>
                         <div>
-                            <small>Phone Number</small>
-                            <p>+256 XXX XXX XXX</p>
+                            <h3 class="h6 fw-bold mb-1">Location</h3>
+                            <p class="text-muted small mb-0">Bugema University, Kampala, Uganda</p>
                         </div>
                     </div>
 
-                    <div class="contact-detail">
-                        <span class="contact-icon"><i class="bi bi-geo-alt"></i></span>
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary-subtle text-primary p-3 rounded-3 me-3 fs-5"><i class="bi bi-github"></i></div>
                         <div>
-                            <small>Location</small>
-                            <p>Kampala, Uganda</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <span class="contact-icon"><i class="bi bi-github"></i></span>
-                        <div>
-                            <small>GitHub</small>
-                            <a href="https://github.com/habimanapatrick125-eng"
-                               target="_blank" rel="noopener noreferrer">
-                                My GitHub Profile
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <span class="contact-icon"><i class="bi bi-linkedin"></i></span>
-                        <div>
-                            <small>LinkedIn</small>
-                            <a href="https://www.linkedin.com/"
-                               target="_blank" rel="noopener noreferrer">
-                                Add Your LinkedIn Profile
-                            </a>
+                            <h3 class="h6 fw-bold mb-1">GitHub Profile</h3>
+                            <a href="https://github.com/habimanapatrick125-eng" target="_blank" class="text-decoration-none text-muted small">habimanapatrick125-eng</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Contact form -->
+                <!-- Interactive Form -->
                 <div class="col-lg-7">
-                    <div class="contact-form-panel">
-                        <p class="eyebrow">SEND A MESSAGE</p>
-                        <h2 class="h3 mb-4">Contact Form</h2>
-
+                    <div class="card border-0 shadow-sm p-4 rounded-4">
+                        <h3 class="h5 fw-bold mb-3">Send Me a Message</h3>
                         <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="fullName" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control"
-                                           id="fullName" name="fullName"
-                                           placeholder="Your full name" required>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control"
-                                           id="email" name="email"
-                                           placeholder="you@example.com" required>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control"
-                                           id="subject" name="subject"
-                                           placeholder="Message subject" required>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message"
-                                              name="message" rows="5"
-                                              placeholder="Write your message here..."
-                                              required></textarea>
-                                </div>
-
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-accent btn-lg w-100">
-                                        <i class="bi bi-send"></i> Prepare Email
-                                    </button>
-                                </div>
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label small fw-bold">Full Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
                             </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label small fw-bold">Email Address</label>
+                                <input type="email5" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label small fw-bold">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="What is this regarding?" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label small fw-bold">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100 py-2 fw-bold">Submit Message</button>
                         </form>
-
-                        <p class="form-note mt-3">
-                            This form opens your email application. It does not
-                            store or send messages directly from the website.
-                        </p>
-
-                        <p id="formFeedback" role="status" aria-live="polite"></p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Map -->
-    <section class="map-section">
-        <div class="container">
-            <div class="section-heading">
-                <p class="eyebrow">MY LOCATION</p>
-                <h2>Find Me in Kampala</h2>
-                <p>This map displays the general city location.</p>
+    <!-- Map Section -->
+    <section class="py-5 bg-light-subtle">
+        <div class="container py-4">
+            <div class="text-center mb-4">
+                <span class="text-uppercase text-primary fw-bold tracking-wide small">LOCATION</span>
+                <h2 class="fw-bold mt-1">Find My General Region</h2>
             </div>
-
-            <div class="map-frame">
-                <iframe
-                    title="Map of Kampala, Uganda"
-                    src="https://www.google.com/maps?q=Kampala%2C%20Uganda&output=embed"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen>
-                </iframe>
+            <div class="ratio ratio-21x9 rounded-4 shadow-sm overflow-hidden">
+                <iframe src="https://www.google.com/maps?q=Bugema%20University%2C%20Uganda&output=embed" style="border:0;" allowfullscreen="" loading="lazy" title="Bugema University Map"></iframe>
             </div>
         </div>
     </section>
-</main>
 
-<footer class="site-footer">
-    <div class="container footer-inner">
-        <a class="navbar-brand fw-bold" href="index.html">Patrick<span class="text-accent">.</span></a>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center text-md-start d-md-flex justify-content-between align-items-center">
+            <p class="mb-2 mb-md-0 small text-light opacity-75">&copy; <span id="currentYear"></span> Patrick Habimana. All rights reserved.</p>
+            <div class="social-icons d-flex justify-content-center gap-3">
+                <a href="https://github.com/habimanapatrick125-eng" target="_blank" class="text-light fs-5"><i class="bi bi-github"></i></a>
+                <a href="mailto:your.email@bugemauniv.ac.ug" class="text-light fs-5"><i class="bi bi-envelope-fill"></i></a>
+            </div>
         </div>
-        <small>© <span data-year></span> Patrick Habimana. All rights reserved.</small>
-    </div>
-</footer>
+    </footer>
 
-<script>
-    // Automatically display the current year.
-    document.querySelectorAll("[data-year]").forEach(el => {
-        el.textContent = new Date().getFullYear();
-    });
-
-    // Prepare an email from the form.
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        if (!this.reportValidity()) return;
-
-        const name = document.getElementById("fullName").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const subject = document.getElementById("subject").value.trim();
-        const message = document.getElementById("message").value.trim();
-
-        // Replace this with your real email address.
-        const recipient = "your.email@example.com";
-
-        const body =
-            "Name: " + name +
-            "\nReply email: " + email +
-            "\n\nMessage:\n" + message;
-
-        document.getElementById("formFeedback").textContent =
-            "Your email application should open with the message prepared.";
-
-        window.location.href =
-            "mailto:" + recipient +
-            "?subject=" + encodeURIComponent(subject) +
-            "&body=" + encodeURIComponent(body);
-    });
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! (Note: Static GitHub Pages websites require a backend service or mailto link to handle form submissions directly).');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
