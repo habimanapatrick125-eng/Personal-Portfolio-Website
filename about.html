@@ -1,150 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Patrick Habimana</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Alex Rivera — biography, education, skills, and interests.">
+  <title>About Me · Alex Rivera</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm site-nav">
-        <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
-                <span class="brand-badge">P</span> Patrick<span class="text-accent">.</span>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top py-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Alex<span>Rivera</span></a>
 
-    <!-- Page Header -->
-    <header class="page-header py-5 bg-dark text-white text-center">
-        <div class="container py-4">
-            <h1 class="fw-bold display-5">About <span class="text-accent">Me</span></h1>
-            <p class="text-light opacity-75 mb-0">My background story, academic path, and professional skill sets.</p>
-        </div>
-    </header>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Biography Section -->
-    <section class="py-5">
-        <div class="container py-4">
-            <div class="row align-items-center gy-5">
-                <div class="col-lg-5">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Biography Image" class="img-fluid rounded-4 shadow">
-                </div>
-                <div class="col-lg-7">
-                    <span class="text-uppercase text-primary fw-bold tracking-wide small">BIOGRAPHY & BACKGROUND</span>
-                    <h2 class="fw-bold mb-3">Dedicated to Crafting Clean and Scalable Code</h2>
-                    <p class="text-muted">
-                        Hello! My name is <strong>Patrick Habimana</strong>. I am an enthusiastic software engineering student driven by a deep curiosity about how systems, networks, and web technologies work together. 
-                    </p>
-                    <p class="text-muted">
-                        My daily routine involves hands-on coding, managing relational databases, resolving syntax or logic challenges, and building organized project repositories via Git and GitHub. I believe in continuous self-improvement and learning by execution.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- Education Section -->
-    <section class="py-5 bg-light-subtle">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <span class="text-uppercase text-primary fw-bold tracking-wide small">ACADEMIC PATH</span>
-                <h2 class="fw-bold mt-1">Education & Coursework</h2>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card border-0 shadow-sm p-4 mb-4">
-                        <div class="d-flex align-items-start gap-3">
-                            <div class="bg-primary text-white p-3 rounded-3"><i class="bi bi-mortarboard-fill fs-4"></i></div>
-                            <div>
-                                <span class="badge bg-primary-subtle text-primary mb-1">Current Studies</span>
-                                <h3 class="h5 fw-bold mb-1">Bugema University</h3>
-                                <p class="text-muted mb-2 small">Bachelor of Software Engineering (Student ID: 25/BSE/BU/R/0025)</p>
-                                <p class="text-secondary small mb-0">Relevant Coursework: Object-Oriented Programming, Database Management (MySQL), Data Structures, and Web UI Design.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- PAGE HEADER -->
+<header class="page-header text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Who I Am</h1>
+    <p class="lead text-secondary">A developer with a designer's heart — here's my story.</p>
+  </div>
+</header>
 
-    <!-- Skills & Competencies -->
-    <section class="py-5">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <span class="text-uppercase text-primary fw-bold tracking-wide small">EXPERTISE</span>
-                <h2 class="fw-bold mt-1">Skills & Competencies</h2>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-5">
-                    <div class="card border-0 shadow-sm p-4 h-100">
-                        <h3 class="h5 fw-bold mb-4 text-primary"><i class="bi bi-code-square me-2"></i>Technical Skills</h3>
-                        <div class="mb-3">
-                            <div class="d-flex justify-content-between small fw-bold mb-1"><span>HTML5 & CSS3</span><span>85%</span></div>
-                            <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 85%;"></div></div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="d-flex justify-content-between small fw-bold mb-1"><span>Bootstrap 5 Responsive Layouts</span><span>80%</span></div>
-                            <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 80%;"></div></div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="d-flex justify-content-between small fw-bold mb-1"><span>Python & Object-Oriented Programming</span><span>70%</span></div>
-                            <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 70%;"></div></div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="d-flex justify-content-between small fw-bold mb-1"><span>MySQL & Database Workbenches</span><span>75%</span></div>
-                            <div class="progress" style="height: 8px;"><div class="progress-bar bg-primary" style="width: 75%;"></div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card border-0 shadow-sm p-4 h-100">
-                        <h3 class="h5 fw-bold mb-4 text-primary"><i class="bi bi-person-lines-fill me-2"></i>Soft Skills & Interests</h3>
-                        <ul class="list-unstyled d-flex flex-column gap-3 text-secondary">
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Strong problem-solving & logical analysis</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Effective team collaboration via GitHub</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Consistent self-directed learning</li>
-                            <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Time management & multi-tasking under deadlines</li>
-                        </ul>
-                        <hr class="my-3">
-                        <h4 class="h6 fw-bold">Personal Passions</h4>
-                        <p class="text-muted small mb-0">Exploring innovative desktop applications, reading technology trends, and structuring functional database models.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- BIOGRAPHY -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop&q=80"
+             alt="Alex at work" class="img-fluid-rounded w-100">
+      </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-auto">
-        <div class="container text-center text-md-start d-md-flex justify-content-between align-items-center">
-            <p class="mb-2 mb-md-0 small text-light opacity-75">&copy; <span id="currentYear"></span> Patrick Habimana. All rights reserved.</p>
-            <div class="social-icons d-flex justify-content-center gap-3">
-                <a href="https://github.com/habimanapatrick125-eng" target="_blank" class="text-light fs-5"><i class="bi bi-github"></i></a>
-                <a href="mailto:your.email@bugemauniv.ac.ug" class="text-light fs-5"><i class="bi bi-envelope-fill"></i></a>
-            </div>
-        </div>
-    </footer>
+      <div class="col-lg-7">
+        <h2 class="h3 fw-bold mb-3">My Biography</h2>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
+        <p class="text-secondary">
+          I'm <strong>Alex Rivera</strong>, a 22-year-old front-end developer and designer currently completing
+          my Bachelor of Science in Digital Media & Web Technologies at the University of Washington.
+          My journey into tech began at age 15 when I built my first HTML page for a school project —
+          the instant I saw my code come alive in a browser, I was hooked.
+        </p>
+
+        <p class="text-secondary">
+          Today, I specialize in building responsive, accessible, and beautifully designed interfaces using
+          HTML5, CSS3, JavaScript, and Bootstrap 5. I care deeply about the details: micro-interactions,
+          typography, color contrast, and the small touches that make a product feel polished and human.
+        </p>
+
+        <p class="text-secondary">
+          Beyond the classroom, I've collaborated on real-world projects with student startups, contributed
+          to open-source design systems, and led workshops to help peers learn modern front-end practices.
+          I'm a firm believer that good design is invisible — it simply <em>works</em>.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2 mt-3">
+          <span class="skill-badge"><i class="bi bi-geo-alt me-1"></i>Seattle, WA</span>
+          <span class="skill-badge"><i class="bi bi-translate me-1"></i>English · Spanish</span>
+          <span class="skill-badge"><i class="bi bi-clock me-1"></i>Open to internships</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="py-5" style="background: #f5f9ff;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-6 fw-bold">Education & Academic Journey</h2>
+      <p class="text-secondary">A timeline of my formal learning.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+
+        <div class="timeline-item">
+          <span class="badge-year">2022 – Present</span>
+          <h4 class="fw-bold mt-2 mb-1">B.Sc. Digital Media & Web Technologies</h4>
+          <p class="text-primary fw-semibold mb-1">University of Washington · Seattle, WA</p>
+          <p class="text-secondary mb-2"><strong>GPA:</strong> 3.8 / 4.0 · Expected Graduation: June 2026</p>
+          <p class="text-secondary mb-2"><strong>Relevant Coursework:</strong></p>
+          <ul class="text-secondary small">
+            <li>Advanced Web Development (HTML5, CSS3, JavaScript)</li>
+            <li>Human-Computer Interaction & Usability Testing</li>
+            <li>UI/UX Design Principles & Prototyping</li>
+            <li>Data Visualization & Information Design</li>
+            <li>Mobile Application Development</li>
+            <li>Database Systems & Backend Fundamentals</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <span class="badge-year">2020 – 2022</span>
+          <h4 class="fw-bold mt-2 mb-1">Associate of Science in Computer Science</h4>
+          <p class="text-primary fw-semibold mb-1">Seattle Central College · Seattle, WA</p>
+          <p class="text-secondary mb-2"><strong>GPA:</strong> 3.9 / 4.0 · Graduated with Honors</p>
+          <p class="text-secondary">
+            Focused on programming fundamentals, object-oriented design, and web basics.
+            Led the campus coding club for one year.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="badge-year">2020</span>
+          <h4 class="fw-bold mt-2 mb-1">High School Diploma</h4>
+          <p class="text-primary fw-semibold mb-1">Roosevelt High School · Seattle, WA</p>
+          <p class="text-secondary mb-0">
+            Graduated with distinction. First exposure to web development through an AP Computer Science course.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-6 fw-bold">Skills & Competencies</h2>
+      <p class="text-secondary">Technical and soft skills I bring to every project.</p>
+    </div>
+
+    <div class="row g-5">
+
+      <!-- TECHNICAL SKILLS -->
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3">
+          <i class="bi bi-code-square text-primary me-2"></i>Technical Skills
+        </h5>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>HTML5 & Semantic Markup</span><span class="fw-semibold">95%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>CSS3, Flexbox & Grid</span><span class="fw-semibold">92%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 92%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Bootstrap 5 Framework</span><span class="fw-semibold">90%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>JavaScript (ES6+)</span><span class="fw-semibold">85%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Git & GitHub</span><span class="fw-semibold">88%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 88%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Figma & UI Prototyping</span><span class="fw-semibold">82%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 82%"></div></div>
+        </div>
+      </div>
+
+      <!-- SOFT SKILLS -->
+      <div class="col-md-6">
+        <h5 class="fw-bold mb-3">
+          <i class="bi bi-people text-primary me-2"></i>Soft Skills
+        </h5>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Communication & Presentation</span><span class="fw-semibold">90%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Problem Solving</span><span class="fw-semibold">93%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 93%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Teamwork & Collaboration</span><span class="fw-semibold">95%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 95%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Time Management</span><span class="fw-semibold">88%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 88%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Creativity & Design Thinking</span><span class="fw-semibold">92%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 92%"></div></div>
+        </div>
+
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Adaptability</span><span class="fw-semibold">90%</span>
+          </div>
+          <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TOOLS AND TECHNOLOGIES -->
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <h5 class="fw-bold mb-3">Tools & Technologies</h5>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="skill-badge"><i class="bi bi-filetype-html me-1"></i>HTML5</span>
+          <span class="skill-badge"><i class="bi bi-filetype-css me-1"></i>CSS3</span>
+          <span class="skill-badge"><i class="bi bi-filetype-js me-1"></i>JavaScript</span>
+          <span class="skill-badge"><i class="bi bi-bootstrap me-1"></i>Bootstrap 5</span>
+          <span class="skill-badge"><i class="bi bi-git me-1"></i>Git</span>
+          <span class="skill-badge"><i class="bi bi-github me-1"></i>GitHub</span>
+          <span class="skill-badge"><i class="bi bi-figma me-1"></i>Figma</span>
+          <span class="skill-badge"><i class="bi bi-code me-1"></i>VS Code</span>
+          <span class="skill-badge"><i class="bi bi-phone me-1"></i>Responsive Design</span>
+          <span class="skill-badge"><i class="bi bi-universal-access me-1"></i>Accessibility (WCAG)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERESTS AND HOBBIES -->
+<section class="py-5" style="background: #f5f9ff;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-6 fw-bold">Interests & Hobbies</h2>
+      <p class="text-secondary">What I do when I'm not coding.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <i class="bi bi-camera fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Photography</h5>
+          <p class="text-secondary small mb-0">
+            Urban landscapes and street photography. I love capturing the quiet beauty of everyday city life.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <i class="bi bi-palette fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Digital Art</h5>
+          <p class="text-secondary small mb-0">
+            Experimenting with creative coding, generative art, and Procreate illustrations on weekends.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <i class="bi bi-book fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Reading</h5>
+          <p class="text-secondary small mb-0">
+            Sci-fi, design theory, and biographies of tech innovators. Currently reading "The Design of Everyday Things".
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <i class="bi bi-bicycle fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Cycling</h5>
+          <p class="text-secondary small mb-0">
+            Weekend rides around Seattle's trails — my favorite way to reset and think through creative problems.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <i class="bi bi-headphones fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Podcasts</h5>
+          <p class="text-secondary small mb-0">
+            Design details, Syntax, and Darknet Diaries keep me inspired and learning during commutes.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-4 text-center">
+          <i class="bi bi-people fs-1 text-primary mb-3"></i>
+          <h5 class="fw-bold">Community</h5>
+          <p class="text-secondary small mb-0">
+            Active in local dev meetups and mentoring first-year students in web fundamentals.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="py-5">
+  <div class="container">
+    <div class="cta-banner p-5 text-center text-white">
+      <h2 class="display-6 fw-bold mb-3">Want to see my work?</h2>
+      <p class="mb-4">
+        Explore the gallery of my projects, presentations, and personal moments.
+      </p>
+      <a href="gallery.html" class="btn btn-light btn-lg px-5 py-3 fw-bold">
+        View Gallery <i class="bi bi-images ms-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <h5 class="fw-bold text-white mb-3">Alex Rivera</h5>
+        <p class="small" style="color: #b6c8e0;">
+          Creative front-end developer & designer crafting meaningful digital experiences from Seattle, WA.
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="fw-bold text-white mb-3">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="index.html">Home</a></li>
+          <li class="mb-2"><a href="about.html">About Me</a></li>
+          <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+          <li class="mb-2"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="fw-bold text-white mb-3">Get In Touch</h6>
+        <ul class="list-unstyled small" style="color: #b6c8e0;">
+          <li class="mb-2"><i class="bi bi-envelope me-2"></i>alex.rivera@university.edu</li>
+          <li class="mb-2"><i class="bi bi-telephone me-2"></i>+1 (206) 555-0192</li>
+          <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Seattle, WA, USA</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr style="border-color: #2c3e50;" class="my-4">
+
+    <p class="text-center small mb-0" style="color: #8fa3c0;">
+      &copy; 2025 Alex Rivera. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
