@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gallery — self-motivation video, project screenshots, and campus moments by Alex Rivera.">
-  <title>Gallery · Alex Rivera</title>
+  <meta name="description" content="Projects and learning journey of Habimana Patrick, Software Engineering student at Bugema University.">
+  <title>Gallery & Projects | Habimana Patrick</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -16,9 +17,11 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top py-3">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Alex<span>Rivera</span></a>
+    <a class="navbar-brand" href="index.html">Habimana <span>Patrick</span></a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#mainNav" aria-controls="mainNav"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -34,43 +37,52 @@
 </nav>
 
 <!-- PAGE HEADER -->
-<header class="page-header text-center">
-  <div class="container">
-    <h1 class="display-5 fw-bold">Gallery</h1>
-    <p class="lead text-secondary">
-      A visual journey through my projects, campus life, and personal motivation.
+<header class="hero-section py-5">
+  <div class="container py-4 text-center">
+    <span class="hero-badge">My learning journey</span>
+    <h1 class="display-4 fw-bold mt-3">
+      My <span class="hero-highlight">Projects Gallery</span>
+    </h1>
+    <p class="lead text-secondary mx-auto" style="max-width: 720px;">
+      Welcome to my project gallery. I am Habimana Patrick, a Software
+      Engineering student at Bugema University. Here I present projects
+      and technologies that form part of my learning journey.
     </p>
   </div>
 </header>
 
-<!-- SELF-MOTIVATION VIDEO -->
+<!-- MOTIVATION VIDEO -->
 <section class="py-5">
   <div class="container">
-    <div class="text-center mb-4">
-      <h2 class="display-6 fw-bold">My Motivation</h2>
-      <p class="text-secondary">
-        Watch a short personal video about why I chose this path.
-      </p>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-lg-9">
-        <div class="video-wrapper">
-          <div class="ratio ratio-16x9">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0"
-              title="Self-Motivation Video by Alex Rivera"
-              allowfullscreen>
-            </iframe>
-          </div>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <h2 class="display-6 fw-bold">Stay Motivated</h2>
+        <p class="text-secondary">
+          Software engineering requires curiosity, patience, practice,
+          and continuous learning. I aim to improve my skills by building
+          projects and learning from mistakes.
+        </p>
+        <p class="text-secondary">
+          This section can contain a motivational video that inspires me
+          to keep learning and developing useful software.
+        </p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="about.html" class="btn btn-primary">About Me</a>
+          <a href="contact.html" class="btn btn-outline-secondary">Contact Me</a>
         </div>
+      </div>
 
-        <div class="card mt-3 p-3">
-          <p class="mb-0 text-secondary small">
-            <strong>Caption:</strong>
-            "Why I chose Digital Media & Web Technologies — a short reflection on my journey
-            from a curious teenager to a developer with a mission."
-            <em>(Video placeholder — replace with your own upload.)</em>
+      <div class="col-lg-7">
+        <div class="card p-3">
+          <video controls preload="metadata"
+                 class="w-100 rounded"
+                 style="max-height: 380px; object-fit: contain;">
+            <source src="assets/videos/motivation.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+          <p class="text-secondary small mt-3 mb-0">
+            Motivation video — add your video file at
+            <code>assets/videos/motivation.mp4</code>.
           </p>
         </div>
       </div>
@@ -78,192 +90,179 @@
   </div>
 </section>
 
-<!-- PHOTO GALLERY -->
+<!-- PROJECT GALLERY -->
 <section class="py-5" style="background: #f5f9ff;">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="display-6 fw-bold">Photo Gallery</h2>
+      <h2 class="display-6 fw-bold">My Development Projects</h2>
       <p class="text-secondary">
-        Snapshots from campus, workshops, and projects.
+        Examples of projects and skills related to my Software Engineering studies.
       </p>
     </div>
 
     <div class="row g-4">
 
-      <!-- PHOTO 1 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
+      <!-- PROJECT 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format&fit=crop&q=80"
-            alt="Hackathon collaboration"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">Campus Hackathon 2024</h6>
-            <p class="text-secondary small mb-0">
-              24-hour hackathon with peers — we built a student-event tracker in Bootstrap and JS.
+            src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&auto=format&fit=crop&q=80"
+            alt="Personal portfolio website preview">
+
+          <div class="card-body p-4">
+            <span class="badge-category mb-2">HTML & CSS</span>
+            <h3 class="h5 fw-bold mt-2">Personal Portfolio Website</h3>
+            <p class="text-secondary small">
+              A responsive multi-page website presenting my biography,
+              education, skills, projects, and contact information.
+            </p>
+            <a href="index.html" class="btn btn-outline-primary btn-sm">
+              View Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&auto=format&fit=crop&q=80"
+            alt="Hospital management system concept">
+
+          <div class="card-body p-4">
+            <span class="badge-category mb-2">C Programming</span>
+            <h3 class="h5 fw-bold mt-2">Hospital Management System</h3>
+            <p class="text-secondary small">
+              A C programming project concept for organizing patient,
+              doctor, appointment, and billing records.
+            </p>
+            <span class="text-secondary small">
+              <i class="bi bi-code-slash me-1"></i> C Programming
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=700&auto=format&fit=crop&q=80"
+            alt="Student management system concept">
+
+          <div class="card-body p-4">
+            <span class="badge-category mb-2">Application Development</span>
+            <h3 class="h5 fw-bold mt-2">Student Management System</h3>
+            <p class="text-secondary small">
+              An application concept for organizing student information
+              and supporting school administration tasks.
+            </p>
+            <span class="text-secondary small">
+              <i class="bi bi-window me-1"></i> Software Development
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=700&auto=format&fit=crop&q=80"
+            alt="Python programming project">
+
+          <div class="card-body p-4">
+            <span class="badge-category mb-2">Python</span>
+            <h3 class="h5 fw-bold mt-2">Python Practice Projects</h3>
+            <p class="text-secondary small">
+              Small exercises and programs for practicing Python syntax,
+              functions, data structures, and problem-solving.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- PHOTO 2 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
+      <!-- PROJECT 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&auto=format&fit=crop&q=80"
-            alt="UX Workshop"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">UI/UX Workshop</h6>
-            <p class="text-secondary small mb-0">
-              Presenting design thinking to first-year students as part of the peer-mentorship program.
+            src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=700&auto=format&fit=crop&q=80"
+            alt="Database project">
+
+          <div class="card-body p-4">
+            <span class="badge-category mb-2">Databases</span>
+            <h3 class="h5 fw-bold mt-2">Database Learning Projects</h3>
+            <p class="text-secondary small">
+              Practice with database tables, relationships, SQL queries,
+              and data organization.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- PHOTO 3 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
+      <!-- PROJECT 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card project-card h-100 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&auto=format&fit=crop&q=80"
-            alt="Project showcase"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">Final Project Showcase</h6>
-            <p class="text-secondary small mb-0">
-              Interactive analytics dashboard — my flagship project for the Advanced Web Development course.
-            </p>
-          </div>
-        </div>
-      </div>
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700&auto=format&fit=crop&q=80"
+            alt="GitHub collaboration and coding">
 
-      <!-- PHOTO 4 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
-          <img
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&auto=format&fit=crop&q=80"
-            alt="Professional headshot"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">Professional Headshot</h6>
-            <p class="text-secondary small mb-0">
-              Taken during the 2024 career fair — used across LinkedIn and portfolio.
+          <div class="card-body p-4">
+            <span class="badge-category mb-2">Git & GitHub</span>
+            <h3 class="h5 fw-bold mt-2">Version Control Practice</h3>
+            <p class="text-secondary small">
+              Organizing code, tracking changes, and publishing web projects
+              using GitHub.
             </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- PHOTO 5 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
-          <img
-            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&auto=format&fit=crop&q=80"
-            alt="Creative workspace"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">My Creative Space</h6>
-            <p class="text-secondary small mb-0">
-              Where the magic happens — a small desk, two monitors, and lots of coffee.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- PHOTO 6 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
-          <img
-            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&auto=format&fit=crop&q=80"
-            alt="Tech conference"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">Front-End Summit</h6>
-            <p class="text-secondary small mb-0">
-              Attending a Seattle front-end development summit — learning from industry leaders.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- PHOTO 7 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
-          <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop&q=80"
-            alt="Team meeting"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">Team Standup</h6>
-            <p class="text-secondary small mb-0">
-              Weekly standup with my capstone project group — hashing out features and deadlines.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- PHOTO 8 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
-          <img
-            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format&fit=crop&q=80"
-            alt="Campus study"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">Study Session</h6>
-            <p class="text-secondary small mb-0">
-              Late-night coding session in the university library with my study group.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- PHOTO 9 -->
-      <div class="col-md-4">
-        <div class="card gallery-card overflow-hidden p-2">
-          <img
-            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=80"
-            alt="Award ceremony"
-            class="img-fluid">
-          <div class="card-body">
-            <h6 class="fw-bold mb-1">Dean's List Award</h6>
-            <p class="text-secondary small mb-0">
-              Receiving the Dean's List recognition for the 2024 academic year.
-            </p>
+            <a href="https://github.com/habimanapatrick125-eng"
+               class="btn btn-outline-primary btn-sm"
+               target="_blank" rel="noopener noreferrer">
+              Visit My GitHub
+            </a>
           </div>
         </div>
       </div>
 
     </div>
+
+    <p class="text-secondary small text-center mt-4">
+      Replace example project descriptions with details, screenshots,
+      and links for your completed projects before publishing.
+    </p>
   </div>
 </section>
 
-<!-- MEDIA CAPTION -->
+<!-- TECHNOLOGIES -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="display-6 fw-bold mb-4">Technologies I Explore</h2>
+
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <span class="badge text-bg-primary p-3">HTML5</span>
+      <span class="badge text-bg-primary p-3">CSS3</span>
+      <span class="badge text-bg-primary p-3">Bootstrap</span>
+      <span class="badge text-bg-primary p-3">C Programming</span>
+      <span class="badge text-bg-primary p-3">Python</span>
+      <span class="badge text-bg-primary p-3">SQL</span>
+      <span class="badge text-bg-primary p-3">Git</span>
+      <span class="badge text-bg-primary p-3">GitHub</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
 <section class="py-5">
   <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-8">
-        <h3 class="fw-bold mb-3">Behind Every Frame</h3>
-        <p class="text-secondary">
-          Each photo here represents more than a moment — it's a milestone, a lesson, or a memory from
-          my journey through university and beyond. From the all-nighters at the library to the exhilarating
-          wins at hackathons, these snapshots tell the story of a student who loves what he does.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CALL TO ACTION -->
-<section class="py-5" style="background: #f5f9ff;">
-  <div class="container">
     <div class="cta-banner p-5 text-center text-white">
-      <h2 class="display-6 fw-bold mb-3">Interested in working together?</h2>
+      <h2 class="display-6 fw-bold mb-3">Have a Project Idea?</h2>
       <p class="mb-4">
-        Reach out — I'd be thrilled to discuss your project or opportunity.
+        Connect with me to discuss learning, software development,
+        and collaboration opportunities.
       </p>
-      <a href="contact.html" class="btn btn-light btn-lg px-5 py-3 fw-bold">
-        Contact Me <i class="bi bi-arrow-right ms-2"></i>
+      <a href="contact.html" class="btn btn-light btn-lg">
+        Contact Habimana Patrick
+        <i class="bi bi-arrow-right ms-2"></i>
       </a>
     </div>
   </div>
@@ -273,12 +272,14 @@
 <footer class="py-5">
   <div class="container">
     <div class="row g-4">
-
       <div class="col-md-4">
-        <h5 class="fw-bold text-white mb-3">Alex Rivera</h5>
+        <h5 class="fw-bold text-white mb-3">Habimana Patrick</h5>
         <p class="small" style="color: #b6c8e0;">
-          Creative front-end developer & designer crafting meaningful digital experiences from Seattle, WA.
+          Software Engineering student at Bugema University.
         </p>
+        <a href="https://github.com/habimanapatrick125-eng"
+           class="social-icon" target="_blank" rel="noopener noreferrer"
+           aria-label="GitHub"><i class="bi bi-github"></i></a>
       </div>
 
       <div class="col-md-4">
@@ -292,30 +293,28 @@
       </div>
 
       <div class="col-md-4">
-        <h6 class="fw-bold text-white mb-3">Get In Touch</h6>
-        <ul class="list-unstyled small" style="color: #b6c8e0;">
-          <li class="mb-2">
-            <i class="bi bi-envelope me-2"></i>alex.rivera@university.edu
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-telephone me-2"></i>+1 (206) 555-0192
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-geo-alt me-2"></i>Seattle, WA, USA
-          </li>
-        </ul>
+        <h6 class="fw-bold text-white mb-3">Contact</h6>
+        <p class="small" style="color: #b6c8e0;">
+          <a href="mailto:habimanapatrick125@gmail.com">habimanapatrick125@gmail.com</a>
+        </p>
+        <p class="small" style="color: #b6c8e0;">
+          <a href="tel:+256726350631">+256 726 350 631</a>
+        </p>
       </div>
-
     </div>
 
     <hr style="border-color: #2c3e50;" class="my-4">
-
     <p class="text-center small mb-0" style="color: #8fa3c0;">
-      &copy; 2025 Alex Rivera. All rights reserved.
+      &copy; <span class="current-year"></span> Habimana Patrick. All rights reserved.
     </p>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelectorAll(".current-year").forEach(function(element) {
+    element.textContent = new Date().getFullYear();
+  });
+</script>
 </body>
 </html>
