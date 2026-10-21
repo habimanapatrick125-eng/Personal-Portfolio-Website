@@ -1,134 +1,523 @@
-/* ==========================================================
-   GLOBAL CONFIGURATION & COLOR VARIABLES
-========================================================== */
-:root {
-    --primary-color: #0d6efd;
-    --primary-dark: #0b5ed7;
-    --dark-bg: #111827;
-    --accent-color: #38bdf8;
-    --body-color: #374151;
+/* ============================================================
+   GLOBAL STYLES
+   ============================================================ */
+* {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
 }
 
 body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: var(--body-color);
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background-color: #fafbfc;
+  color: #1a2634;
+  overflow-x: hidden;
 }
 
-/* ==========================================================
-   NAVIGATION BAR STYLING
-========================================================== */
-.site-nav {
-    background-color: var(--dark-bg);
-    padding: 12px 0;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.brand-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background-color: var(--primary-color);
-    color: #ffffff;
-    border-radius: 8px;
-    font-weight: bold;
+a {
+  transition: color 0.15s ease;
 }
 
-.text-accent {
-    color: var(--accent-color) !important;
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
-.site-nav .nav-link {
-    color: #9ca3af !important;
-    font-weight: 500;
-    transition: color 0.2s ease-in-out;
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #0b1b2f !important;
 }
 
-.site-nav .nav-link:hover,
-.site-nav .nav-link.active {
-    color: #ffffff !important;
+.navbar-brand span {
+  color: #2a6df4;
 }
 
-/* ==========================================================
-   HERO & HEADER COMPONENTS
-========================================================== */
+.nav-link {
+  font-weight: 500;
+  color: #2c3e50 !important;
+  margin: 0 0.25rem;
+  position: relative;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #2a6df4 !important;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 8px;
+  right: 8px;
+  height: 3px;
+  background-color: #2a6df4;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn-primary {
+  background-color: #2a6df4;
+  border-color: #2a6df4;
+  font-weight: 600;
+  padding: 0.7rem 1.6rem;
+  border-radius: 40px;
+  box-shadow: 0 8px 18px -6px rgba(42, 109, 244, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1a5ad9;
+  border-color: #1a5ad9;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px -6px rgba(42, 109, 244, 0.45);
+}
+
+.btn-outline-secondary {
+  border-radius: 40px;
+  font-weight: 600;
+  padding: 0.7rem 1.6rem;
+  border: 2px solid #d5deeb;
+  color: #1a2634;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #1a2634;
+  border-color: #1a2634;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #1a2634;
+  border-radius: 40px;
+  font-weight: 600;
+}
+
+.btn-light:hover {
+  background-color: #eef4ff;
+  color: #2a6df4;
+}
+
+.btn-outline-light {
+  border-radius: 40px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #1a2634;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.card {
+  border: none;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.07);
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
 .hero-section {
-    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-    padding: 160px 0 100px 0;
-    min-height: 85vh;
+  padding: 5rem 0 4.5rem;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%);
+  border-radius: 0 0 60px 60px;
 }
 
-.hero-img {
-    border: 4px solid rgba(255, 255, 255, 0.1);
-    max-height: 420px;
-    object-fit: cover;
+.hero-highlight {
+  color: #2a6df4;
+  position: relative;
+  display: inline-block;
 }
 
+.hero-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background-color: rgba(42, 109, 244, 0.18);
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 40px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* ============================================================
+   PAGE HEADER (INNER PAGES)
+   ============================================================ */
 .page-header {
-    background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-    padding-top: 140px !important;
+  padding: 4.5rem 0 3rem;
+  background: linear-gradient(145deg, #ffffff 0%, #f0f6ff 100%);
+  border-radius: 0 0 60px 60px;
+  margin-bottom: 1rem;
 }
 
-.badge-custom {
-    display: inline-block;
-    padding: 6px 12px;
-    background-color: rgba(56, 189, 248, 0.1);
-    color: var(--accent-color);
-    font-size: 0.75rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 6px;
+/* ============================================================
+   IMAGES
+   ============================================================ */
+.profile-badge {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.15);
 }
 
-/* ==========================================================
-   BUTTONS & CARDS
-========================================================== */
-.btn-primary-custom {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    color: #ffffff;
-    font-weight: 500;
-    border-radius: 8px;
-    transition: all 0.2s ease;
+.img-fluid-rounded {
+  border-radius: 28px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease;
 }
 
-.btn-primary-custom:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-    color: #ffffff;
+.img-fluid-rounded:hover {
+  transform: scale(1.01);
 }
 
-.feature-card, .gallery-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-radius: 12px !important;
+/* ============================================================
+   SKILL BADGES & PROGRESS BARS
+   ============================================================ */
+.skill-badge {
+  background: #eef4ff;
+  color: #1e4c9a;
+  font-weight: 500;
+  padding: 0.55rem 1.15rem;
+  border-radius: 40px;
+  margin: 0.25rem;
+  display: inline-block;
+  font-size: 0.88rem;
+  transition: all 0.15s ease;
 }
 
-.feature-card:hover, .gallery-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
+.skill-badge:hover {
+  background: #2a6df4;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.progress {
+  height: 10px;
+  border-radius: 20px;
+  background-color: #e3eaf3;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #2a6df4, #6a9aff);
+  border-radius: 20px;
+}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+.timeline-item {
+  border-left: 3px solid #2a6df4;
+  padding-left: 1.75rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  background: #2a6df4;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(42, 109, 244, 0.18);
+}
+
+.timeline-item .badge-year {
+  background: #eef4ff;
+  color: #1e4c9a;
+  font-weight: 600;
+  border-radius: 40px;
+  padding: 0.35rem 1rem;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+/* ============================================================
+   VIDEO WRAPPER
+   ============================================================ */
+.video-wrapper {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+  background: #000;
+}
+
+/* ============================================================
+   GALLERY CARDS
+   ============================================================ */
+.gallery-card {
+  cursor: pointer;
 }
 
 .gallery-card img {
-    height: 220px;
-    object-fit: cover;
+  border-radius: 18px;
+  transition: transform 0.35s ease;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
 }
 
-.icon-box {
-    width: 48px;
-    height: 48px;
+.gallery-card:hover img {
+  transform: scale(1.04);
 }
 
-/* ==========================================================
-   UTILITY & FOOTER
-========================================================== */
-.tracking-wide {
-    letter-spacing: 1.5px;
+.project-card img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.35s ease;
 }
 
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.badge-category {
+  background: #eef4ff;
+  color: #1e4c9a;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+.contact-icon-box {
+  width: 48px;
+  height: 48px;
+  background: #eef4ff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.form-control,
+.form-select {
+  border-radius: 16px;
+  padding: 0.85rem 1.2rem;
+  border: 1px solid #e2e9f2;
+  background: #ffffff;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #2a6df4;
+  box-shadow: 0 0 0 4px rgba(42, 109, 244, 0.1);
+}
+
+.form-label {
+  color: #1a2634;
+  margin-bottom: 0.4rem;
+}
+
+.form-check-input:checked {
+  background-color: #2a6df4;
+  border-color: #2a6df4;
+}
+
+.map-container {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================================
+   ACCORDION
+   ============================================================ */
+.accordion-item {
+  border: 1px solid #e8eef7;
+  border-radius: 16px !important;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+
+.accordion-button {
+  font-weight: 600;
+  background-color: #ffffff;
+  border-radius: 16px !important;
+  padding: 1.15rem 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #eef4ff;
+  color: #1e4c9a;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+/* ============================================================
+   CTA BANNER
+   ============================================================ */
+.cta-banner {
+  background: linear-gradient(135deg, #0b1b2f 0%, #1e4c9a 100%);
+  border-radius: 32px;
+  box-shadow: 0 24px 48px -12px rgba(11, 27, 47, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(42, 109, 244, 0.35) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.cta-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
 footer {
-    background-color: var(--dark-bg);
+  background-color: #0b1b2f;
+  color: #b6c8e0;
+}
+
+footer a {
+  color: #d3e0f0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+.social-icon {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: #b6c8e0;
+  transition: all 0.15s ease;
+  display: inline-block;
+}
+
+.social-icon:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   RESPONSIVE TWEAKS
+   ============================================================ */
+@media (max-width: 991.98px) {
+  .hero-section {
+    padding: 3.5rem 0 3rem;
+    border-radius: 0 0 40px 40px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.4rem;
+  }
+
+  .page-header {
+    padding: 3rem 0 2rem;
+    border-radius: 0 0 40px 40px;
+  }
+
+  .cta-banner {
+    padding: 2.5rem 1.5rem !important;
+    border-radius: 24px;
+  }
+
+  .navbar-nav {
+    padding-top: 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .display-6 {
+    font-size: 1.9rem;
+  }
+
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  .display-4 {
+    font-size: 2.3rem;
+  }
+
+  .gallery-card img {
+    height: 200px;
+  }
+}
+
+/* ============================================================
+   SMOOTH SCROLL + SELECTION
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #2a6df4;
+  color: #ffffff;
 }
